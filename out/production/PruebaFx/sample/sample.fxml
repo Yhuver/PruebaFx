@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="363.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane prefHeight="62.0" prefWidth="363.0" style="-fx-background-color: #0e192b;" AnchorPane.bottomAnchor="358.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox layoutY="-36.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Separator layoutX="45.0" layoutY="10.0" prefHeight="2.0" prefWidth="33.0" visible="false" />
+                  <ImageView fitHeight="40.0" fitWidth="35.0" onMouseClicked="#onUserButtonClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/icons_user.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="11.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Separator layoutX="80.0" layoutY="10.0" prefHeight="4.0" prefWidth="51.0" visible="false" />
+                  <ImageView fitHeight="40.0" fitWidth="35.0" onMouseClicked="#onLocationButtonClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/icons_location.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="11.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Separator prefHeight="0.0" prefWidth="51.0" visible="false" />
+                  <ImageView fitHeight="40.0" fitWidth="35.0" onMouseClicked="#onEducationButtonClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/icons_graduation.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="11.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Separator prefHeight="0.0" prefWidth="51.0" visible="false" />
+                  <ImageView fitHeight="40.0" fitWidth="35.0" onMouseClicked="#onExitButtonClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/icons_exit.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="11.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Separator layoutX="10.0" layoutY="10.0" prefHeight="2.0" prefWidth="19.0" visible="false" />
+               </children>
+            </HBox>
+         </children></AnchorPane>
+      <AnchorPane fx:id="educationPanel" layoutY="94.0" prefHeight="347.0" prefWidth="363.0" style="-fx-background-color: #0e192b;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label layoutX="15.0" layoutY="48.0" prefHeight="20.0" prefWidth="157.0" text="Nivel Academico:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <ComboBox layoutX="179.0" layoutY="44.0" prefHeight="29.0" prefWidth="157.0" promptText="Seleccionar" />
+            <Label layoutX="7.0" layoutY="14.0" opacity="0.4" prefHeight="20.0" prefWidth="222.0" text="Información Academica" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Separator layoutX="224.0" layoutY="22.0" opacity="0.4" prefHeight="4.0" prefWidth="130.0" />
+            <Label layoutX="266.0" layoutY="190.0" opacity="0.4" prefHeight="20.0" prefWidth="112.0" text="Intereses" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Separator layoutX="15.0" layoutY="198.0" opacity="0.4" prefHeight="3.0" prefWidth="242.0" />
+            <TextField layoutX="94.0" layoutY="82.0" prefHeight="28.0" prefWidth="242.0" promptText="Título Obtenido" style="-fx-text-fill: #5bd36d;" />
+            <Label layoutX="15.0" layoutY="90.0" text="Título:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <CheckBox layoutX="21.0" layoutY="132.0" mnemonicParsing="false" text="Estudiante" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </CheckBox>
+            <TextField layoutX="141.0" layoutY="127.0" prefHeight="28.0" prefWidth="194.0" promptText="Carrera que cúrsa" style="-fx-text-fill: #5bd36d;" />
+            <CheckBox layoutX="12.0" layoutY="218.0" mnemonicParsing="false" text="Tecnologia" textFill="WHITE" />
+            <CheckBox layoutX="12.0" layoutY="256.0" mnemonicParsing="false" text="Ciencia" textFill="WHITE" />
+            <CheckBox layoutX="12.0" layoutY="295.0" mnemonicParsing="false" text="Investigación" textFill="WHITE" />
+            <CheckBox layoutX="127.0" layoutY="218.0" mnemonicParsing="false" text="Deportes" textFill="WHITE" />
+            <CheckBox layoutX="127.0" layoutY="256.0" mnemonicParsing="false" text="Videojuegos" textFill="WHITE" />
+            <CheckBox layoutX="127.0" layoutY="295.0" mnemonicParsing="false" text="Televisión" textFill="WHITE" />
+            <CheckBox layoutX="240.0" layoutY="218.0" mnemonicParsing="false" text="Ocio" textFill="WHITE" />
+            <CheckBox layoutX="240.0" layoutY="256.0" mnemonicParsing="false" text="Mujeres" textFill="WHITE" />
+            <CheckBox layoutX="240.0" layoutY="295.0" mnemonicParsing="false" text="Otros" textFill="WHITE" />
+         </children></AnchorPane>
+      <AnchorPane fx:id="locationPanel" layoutY="114.0" prefHeight="347.0" prefWidth="363.0" style="-fx-background-color: #0e192b;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label layoutX="14.0" layoutY="42.0" prefHeight="20.0" prefWidth="57.0" text="País:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <ComboBox layoutX="106.0" layoutY="38.0" prefHeight="29.0" prefWidth="202.0" promptText="Seleccionar" />
+            <Label layoutX="14.0" layoutY="92.0" prefHeight="20.0" prefWidth="80.0" text="Estado:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <ComboBox layoutX="106.0" layoutY="88.0" prefHeight="29.0" prefWidth="202.0" promptText="Seleccionar" />
+            <Label layoutX="14.0" layoutY="141.0" prefHeight="20.0" prefWidth="72.0" text="Ciudad:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <ComboBox layoutX="106.0" layoutY="137.0" prefHeight="29.0" prefWidth="202.0" promptText="Seleccionar" />
+            <Label layoutX="6.0" layoutY="8.0" opacity="0.4" prefHeight="20.0" prefWidth="112.0" text="Residencia" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Separator layoutX="111.0" layoutY="17.0" opacity="0.4" prefHeight="3.0" prefWidth="242.0" />
+            <Label layoutX="265.0" layoutY="184.0" opacity="0.4" prefHeight="20.0" prefWidth="112.0" text="Contacto" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Separator layoutX="14.0" layoutY="192.0" opacity="0.4" prefHeight="3.0" prefWidth="242.0" />
+            <TextField layoutX="133.0" layoutY="204.0" prefHeight="28.0" prefWidth="194.0" style="-fx-text-fill: #5bd36d;" />
+            <Label layoutX="14.0" layoutY="212.0" text="Dirección:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField layoutX="67.0" layoutY="241.0" prefHeight="28.0" prefWidth="114.0" style="-fx-text-fill: #5bd36d;" />
+            <Label layoutX="14.0" layoutY="249.0" text="Tel1:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField layoutX="244.0" layoutY="242.0" prefHeight="28.0" prefWidth="114.0" style="-fx-text-fill: #5bd36d;" />
+            <Label layoutX="191.0" layoutY="253.0" text="Tel2:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField layoutX="96.0" layoutY="281.0" prefHeight="28.0" prefWidth="57.0" promptText="# País" style="-fx-text-fill: #5bd36d;" />
+            <Label layoutX="13.0" layoutY="288.0" text="Celular:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField layoutX="166.0" layoutY="281.0" prefHeight="28.0" prefWidth="185.0" promptText="Numero Celular" style="-fx-text-fill: #5bd36d;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="userPanel" layoutY="114.0" prefHeight="347.0" prefWidth="363.0" style="-fx-background-color: #0e192b;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <TextField layoutX="149.0" layoutY="32.0" prefHeight="28.0" prefWidth="130.0" promptText="Digite su nombre" style="-fx-text-fill: #5bd36d;" />
+            <TextField layoutX="149.0" layoutY="76.0" prefHeight="28.0" prefWidth="130.0" promptText="Digite su apellido" style="-fx-text-fill: #5bd36d;" />
+            <TextField layoutX="149.0" layoutY="123.0" prefHeight="28.0" prefWidth="114.0" promptText="Digite su id" style="-fx-text-fill: #5bd36d;" />
+            <Label layoutX="10.0" layoutY="40.0" text="Nombre:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="9.0" layoutY="86.0" text="Apellido:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="9.0" layoutY="132.0" text="Identificacion:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="comboBoxId" layoutX="270.0" layoutY="123.0" prefHeight="29.0" prefWidth="89.0" promptText="Tipo id" />
+            <Separator layoutX="24.0" layoutY="193.0" opacity="0.3" prefHeight="3.0" prefWidth="315.0" />
+            <Label layoutX="10.0" layoutY="234.0" text="Estado Civil:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="287.0" text="Género:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="comboBoxRelation" layoutX="149.0" layoutY="231.0" prefHeight="4.0" prefWidth="150.0" promptText="Seleccionar" />
+            <ComboBox fx:id="comboBoxGenero" layoutX="149.0" layoutY="283.0" prefHeight="29.0" prefWidth="150.0" promptText="Genero" />
+         </children></AnchorPane>
+      <ImageView fx:id="educationArrow" fitHeight="35.0" fitWidth="35.0" layoutX="205.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@images/icons_arrow.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="userArrow" fitHeight="35.0" fitWidth="35.0" layoutX="32.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/icons_arrow.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="locationArrow" fitHeight="35.0" fitWidth="35.0" layoutX="117.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@images/icons_arrow.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
